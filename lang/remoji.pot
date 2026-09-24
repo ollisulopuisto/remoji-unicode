@@ -1,0 +1,494 @@
+# Copyright (C) 2026 PHP Fan
+# This file is distributed under the GPLv3.
+msgid ""
+msgstr ""
+"Project-Id-Version: Remoji - Post/Comment Reaction and Enhancement 2.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/remoji\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-07-07T19:41:30+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: remoji\n"
+
+#. Plugin Name of the plugin
+#: remoji.php
+msgid "Remoji - Post/Comment Reaction and Enhancement"
+msgstr ""
+
+#. Description of the plugin
+#: remoji.php
+msgid "React w/ emoji. Allow visitors to react with emoji to comments. Enabling this plugin can easily attach a Slack style emoji bar to each comment."
+msgstr ""
+
+#. Author of the plugin
+#: remoji.php
+msgid "PHP Fan"
+msgstr ""
+
+#: src/admin.cls.php:69
+#: src/admin.cls.php:94
+msgid "Postview"
+msgstr ""
+
+#: src/admin.cls.php:105
+#: tpl/entry.tpl.php:10
+msgid "Settings"
+msgstr ""
+
+#: src/admin.cls.php:123
+msgid "Remoji"
+msgstr ""
+
+#: src/admin.cls.php:145
+msgid "Disable Remoji reactions for this post"
+msgstr ""
+
+#: src/admin.cls.php:149
+msgid "When enabled, Remoji will not render or accept reactions for this post or its comments."
+msgstr ""
+
+#: src/admin.cls.php:227
+msgid "Options saved successfully!"
+msgstr ""
+
+#. translators: %s: the folder path.
+#: src/f.cls.php:107
+msgid "Folder does not exist: %s"
+msgstr ""
+
+#. translators: %1$s: the folder path; %2$s: the underlying error message.
+#: src/f.cls.php:114
+msgid "Can not create folder: %1$s. Error: %2$s"
+msgstr ""
+
+#. translators: %s: the folder path.
+#: src/f.cls.php:121
+msgid "Folder is not writable: %s."
+msgstr ""
+
+#. translators: %s: the file path.
+#: src/f.cls.php:127
+#: src/f.cls.php:131
+msgid "File %s is not writable."
+msgstr ""
+
+#. translators: %s: the file path.
+#: src/f.cls.php:139
+msgid "Failed to write to %s."
+msgstr ""
+
+#: src/gui.cls.php:398
+msgid "OFF"
+msgstr ""
+
+#: src/gui.cls.php:399
+msgid "ON"
+msgstr ""
+
+#. translators: %s: a human-readable time duration (wrapped in a <code> tag) to wait before retrying.
+#: src/lang.cls.php:36
+msgid "Please try again after %s."
+msgstr ""
+
+#: src/lang.cls.php:40
+msgid "Missing required parameters."
+msgstr ""
+
+#: src/lang.cls.php:44
+msgid "Invalid emoji."
+msgstr ""
+
+#: src/lang.cls.php:48
+msgid "Invalid reaction type."
+msgstr ""
+
+#: src/lang.cls.php:52
+msgid "Missing post ID."
+msgstr ""
+
+#: src/lang.cls.php:56
+msgid "This item can not be reacted to."
+msgstr ""
+
+#: src/lang.cls.php:60
+msgid "Reactions are disabled for this content type."
+msgstr ""
+
+#: src/lang.cls.php:64
+msgid "Reactions are disabled for this post."
+msgstr ""
+
+#: src/lang.cls.php:68
+msgid "You need to login to proceed this action."
+msgstr ""
+
+#. translators: %s: the maximum number of emoji reactions allowed per IP (wrapped in a <code> tag).
+#: src/lang.cls.php:73
+msgid "You have reached maximum %s emojis for this post/comment."
+msgstr ""
+
+#: src/lang.cls.php:77
+msgid "You have reacted with this emoji."
+msgstr ""
+
+#: src/lang.cls.php:81
+msgid "Emoji reaction to Posts is disabled."
+msgstr ""
+
+#: src/lang.cls.php:85
+msgid "Emoji reaction to Comments is disabled."
+msgstr ""
+
+#: src/reaction.cls.php:157
+msgid "Delete emoji reaction record successfully!"
+msgstr ""
+
+#: src/reaction.cls.php:506
+msgid "Guest"
+msgstr ""
+
+#. translators: %s: the post/comment title.
+#: src/reaction.cls.php:591
+msgid "New reaction on \"%s\""
+msgstr ""
+
+#. translators: %1$s: the content type (post or comment); %2$s: the post/comment title.
+#: src/reaction.cls.php:593
+msgid "Your %1$s \"%2$s\" just received a new emoji reaction."
+msgstr ""
+
+#: src/util.cls.php:148
+msgid "right now"
+msgstr ""
+
+#: src/util.cls.php:148
+msgid "just now"
+msgstr ""
+
+#. translators: %s: a human-readable elapsed time duration (e.g. "1d, 2h, 5m").
+#: src/util.cls.php:152
+msgid " %s ago"
+msgstr ""
+
+#: src/util.cls.php:183
+msgid "&laquo;"
+msgstr ""
+
+#: src/util.cls.php:184
+msgid "&raquo;"
+msgstr ""
+
+#: tpl/entry.tpl.php:11
+#: tpl/log.tpl.php:16
+msgid "Reaction Log"
+msgstr ""
+
+#: tpl/entry.tpl.php:50
+msgid "Rate Us!"
+msgstr ""
+
+#: tpl/log.tpl.php:19
+msgid "Total"
+msgstr ""
+
+#: tpl/log.tpl.php:27
+msgid "Date"
+msgstr ""
+
+#: tpl/log.tpl.php:28
+msgid "IP"
+msgstr ""
+
+#: tpl/log.tpl.php:29
+msgid "GeoLocation"
+msgstr ""
+
+#: tpl/log.tpl.php:30
+msgid "Reaction"
+msgstr ""
+
+#: tpl/log.tpl.php:31
+msgid "Operation"
+msgstr ""
+
+#: tpl/log.tpl.php:32
+msgid "Related Topic"
+msgstr ""
+
+#: tpl/log.tpl.php:46
+msgid "Delete"
+msgstr ""
+
+#: tpl/log.tpl.php:54
+#: widgets/last-reacted.cls.php:69
+msgid "Comment on"
+msgstr ""
+
+#: tpl/log.tpl.php:57
+msgid "Comment"
+msgstr ""
+
+#: tpl/reaction_bar.tpl.php:31
+msgid "Error happened."
+msgstr ""
+
+#: tpl/setting.tpl.php:14
+msgid "Emoji Reaction Settings"
+msgstr ""
+
+#: tpl/setting.tpl.php:18
+msgid "Emoji Reaction on Posts"
+msgstr ""
+
+#: tpl/setting.tpl.php:22
+msgid "Allow emoji reactions to posts."
+msgstr ""
+
+#: tpl/setting.tpl.php:28
+msgid "Emoji Reaction on Comments"
+msgstr ""
+
+#: tpl/setting.tpl.php:32
+msgid "Allow emoji reactions to comments."
+msgstr ""
+
+#: tpl/setting.tpl.php:38
+msgid "Guest Reaction"
+msgstr ""
+
+#: tpl/setting.tpl.php:42
+msgid "Allow guest visitors to send the reactions. If turned OFF, only logged-in users can react."
+msgstr ""
+
+#: tpl/setting.tpl.php:48
+msgid "GDPR Compliance"
+msgstr ""
+
+#: tpl/setting.tpl.php:52
+msgid "With this feature turned on, all logged IPs get obfuscated (md5-hashed)."
+msgstr ""
+
+#: tpl/setting.tpl.php:58
+msgid "Max Emojis Per IP"
+msgstr ""
+
+#: tpl/setting.tpl.php:63
+msgid "Only allow these amount of emojis per IP per post."
+msgstr ""
+
+#: tpl/setting.tpl.php:64
+msgid "Set to 0 for unlimited reactions."
+msgstr ""
+
+#: tpl/setting.tpl.php:70
+msgid "Withdraw Reaction"
+msgstr ""
+
+#: tpl/setting.tpl.php:74
+msgid "Allow a visitor to withdraw their own reaction by clicking the same emoji again."
+msgstr ""
+
+#: tpl/setting.tpl.php:80
+msgid "Show Reactors"
+msgstr ""
+
+#: tpl/setting.tpl.php:84
+msgid "Show who reacted (logged-in user names) on hover. Guests are shown as a generic label. Disabled automatically when GDPR mode is on."
+msgstr ""
+
+#: tpl/setting.tpl.php:90
+msgid "Reaction Notification"
+msgstr ""
+
+#: tpl/setting.tpl.php:94
+msgid "Email the content author when their post/comment receives a new reaction (throttled; author self-reactions are skipped)."
+msgstr ""
+
+#: tpl/setting.tpl.php:100
+msgid "Limit Emojis"
+msgstr ""
+
+#: tpl/setting.tpl.php:104
+msgid "One emoji name per line to restrict the picker to a subset. Leave empty to allow all."
+msgstr ""
+
+#: tpl/setting.tpl.php:107
+msgid "Available names"
+msgstr ""
+
+#: tpl/setting.tpl.php:113
+msgid "Auto-Append To Content"
+msgstr ""
+
+#: tpl/setting.tpl.php:117
+msgid "Automatically append the reaction bar to post content."
+msgstr ""
+
+#: tpl/setting.tpl.php:118
+msgid "Turn OFF to place it manually with the shortcode or PHP hook below."
+msgstr ""
+
+#: tpl/setting.tpl.php:120
+#: tpl/setting.tpl.php:153
+msgid "Shortcode"
+msgstr ""
+
+#: tpl/setting.tpl.php:120
+#: tpl/setting.tpl.php:121
+msgid "or"
+msgstr ""
+
+#: tpl/setting.tpl.php:121
+msgid "Hook"
+msgstr ""
+
+#: tpl/setting.tpl.php:127
+msgid "Disable Reactions On"
+msgstr ""
+
+#: tpl/setting.tpl.php:130
+msgid "Select the post types to disable reactions on (e.g. pages)"
+msgstr ""
+
+#: tpl/setting.tpl.php:141
+msgid "Post View Settings"
+msgstr ""
+
+#: tpl/setting.tpl.php:145
+msgid "Post View Count"
+msgstr ""
+
+#: tpl/setting.tpl.php:149
+msgid "Enable post view count and show the number in posts."
+msgstr ""
+
+#: tpl/setting.tpl.php:150
+msgid "Compatible with all cache plugins!"
+msgstr ""
+
+#: tpl/setting.tpl.php:152
+msgid "API Supported"
+msgstr ""
+
+#: tpl/setting.tpl.php:154
+msgid "Hooks"
+msgstr ""
+
+#: tpl/setting.tpl.php:161
+msgid "Delayed Count"
+msgstr ""
+
+#: tpl/setting.tpl.php:163
+msgid "Second(s)"
+msgstr ""
+
+#: tpl/setting.tpl.php:166
+msgid "Only count the visit when the visitor stayed for longer than the above time."
+msgstr ""
+
+#: tpl/setting.tpl.php:167
+msgid "This can avoid counting search engine bots and other invalid visitors."
+msgstr ""
+
+#: tpl/setting.tpl.php:168
+msgid "Set to 0 to count right away."
+msgstr ""
+
+#: tpl/setting.tpl.php:174
+msgid "Post View Template"
+msgstr ""
+
+#. translators: %s: the dashicons CSS class name, wrapped in a <code> tag.
+#: tpl/setting.tpl.php:180
+msgid "You can replace %s to other WordPress icons."
+msgstr ""
+
+#: tpl/setting.tpl.php:181
+msgid "For more icons please visit "
+msgstr ""
+
+#: tpl/setting.tpl.php:184
+msgid "The default template is"
+msgstr ""
+
+#: tpl/setting.tpl.php:190
+msgid "Append Post View To Content"
+msgstr ""
+
+#: tpl/setting.tpl.php:194
+msgid "This option can show the post view number in the post content bottom."
+msgstr ""
+
+#: tpl/setting.tpl.php:200
+msgid "Append Post View To Theme"
+msgstr ""
+
+#: tpl/setting.tpl.php:204
+msgid "If you are using default WordPress theme, this option can append the views automatically after the comment count."
+msgstr ""
+
+#: tpl/setting.tpl.php:207
+msgid "NOTE: Currently only support the following themes"
+msgstr ""
+
+#: tpl/setting.tpl.php:213
+msgid "Comment Settings"
+msgstr ""
+
+#: tpl/setting.tpl.php:217
+msgid "Disable Comment"
+msgstr ""
+
+#: tpl/setting.tpl.php:220
+msgid "Select the post types to disable comments on"
+msgstr ""
+
+#: tpl/setting.tpl.php:233
+#: tpl/setting.tpl.php:234
+msgid "Save Changes"
+msgstr ""
+
+#: widgets/last-reacted.cls.php:24
+msgid "Recent Reacted Emoji"
+msgstr ""
+
+#: widgets/last-reacted.cls.php:25
+msgid "Remoji last reacted posts/comments list"
+msgstr ""
+
+#: widgets/last-reacted.cls.php:94
+msgid "Recent Reacted"
+msgstr ""
+
+#: widgets/last-reacted.cls.php:99
+#: widgets/most-viewed.cls.php:76
+msgid "Title"
+msgstr ""
+
+#: widgets/last-reacted.cls.php:103
+#: widgets/most-viewed.cls.php:80
+msgid "Template"
+msgstr ""
+
+#: widgets/last-reacted.cls.php:105
+#: widgets/most-viewed.cls.php:82
+msgid "Supported tags"
+msgstr ""
+
+#: widgets/last-reacted.cls.php:108
+#: widgets/most-viewed.cls.php:85
+msgid "Limit"
+msgstr ""
+
+#: widgets/most-viewed.cls.php:23
+#: widgets/most-viewed.cls.php:71
+msgid "Most Viewed Posts"
+msgstr ""
+
+#: widgets/most-viewed.cls.php:24
+msgid "Remoji most viewed posts list"
+msgstr ""
