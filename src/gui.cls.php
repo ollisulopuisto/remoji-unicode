@@ -363,7 +363,8 @@ class GUI extends Instance {
 	 */
 	public function catalog() {
 		$this->_load_catalog();
-		return array_merge( $this->_emoji_catalog, $this->_emoji_list );
+		// `+` keeps numeric names like "100" / "1234" ( array_merge would renumber them ); picker entries win
+		return $this->_emoji_list + $this->_emoji_catalog;
 	}
 
 	/**
@@ -650,6 +651,25 @@ class GUI extends Instance {
 		$this->enqueue_style();
 
 		wp_register_script( 'remoji_admin', REMOJI_URL . 'assets/remoji_admin.js', array( 'jquery' ), Core::VER, false );
+
+		// 2.6.3: name => glyph map for the "Limit Emojis" live preview, resolved the same way as the picker
+		$catalog = array();
+		foreach ( $this->catalog() as $k => $v ) {
+			$char = self::to_char( $v );
+			if ( $char !== '' ) {
+				$catalog[ (string) $k ] = $char;
+			}
+		}
+		wp_localize_script(
+			'remoji_admin',
+			'remoji_admin',
+			array(
+				'catalog'   => (object) $catalog,
+				'preview'   => __( 'Preview', 'remoji' ),
+				'unknown'   => __( 'Unknown emoji name. It will be dropped when you save.', 'remoji' ),
+				'duplicate' => __( 'Duplicate. Only the first one is kept.', 'remoji' ),
+			)
+		);
 
 		wp_enqueue_script( 'remoji_admin' );
 	}

@@ -16,7 +16,7 @@ Contributors: Remoji
 Tags: comment, emoji, postviews, counter, views
 Requires at least: 4.4
 Tested up to: 7.0
-Stable tag: 2.6.3
+Stable tag: 2.6.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -84,10 +84,6 @@ Turn OFF "Auto-Append To Content" in the settings, then use the shortcode `[remo
 Use "Limit Emojis" in the settings to restrict the picker to a subset. Developers can add/replace emojis via the `remoji_emoji_list` filter.
 
 == Changelog ==
-
-= 2.6.3 (Unicode fork) =
-* Settings: "Limit Emojis" shows a live preview (glyph + name per line) that updates while you type. Unknown names are flagged in red with a warning sign; duplicates are marked.
-* **Bugfix** Numeric shortnames such as `100` and `1234` are no longer dropped from "Limit Emojis" on save.
 
 = 2.6.2 (Unicode fork) =
 * **Privacy** Removed the third-party IP geolocation lookup (www.doapi.us). The plugin no longer sends any visitor data to outside services.

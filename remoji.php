@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Remoji Unicode Fork
  * Description:       Fork of Remoji 2.6 (Post/Comment Reaction and Enhancement) that renders reactions as plain Unicode emoji instead of bundled SVG images, and accepts any shortname => codepoint mapping. Deactivate the original Remoji before activating this fork; both share the same settings and reaction data.
- * Version:           2.6.2
+ * Version:           2.6.3
  * Update URI:        false
  * Author:            PHP Fan
  * License:           GPLv3
@@ -31,7 +31,7 @@ if ( defined( 'REMOJI_V' ) ) {
 	return;
 }
 
-define( 'REMOJI_V', '2.6.2' ); // Unicode fork of Remoji 2.6
+define( 'REMOJI_V', '2.6.3' ); // Unicode fork of Remoji 2.6
 
 ! defined( 'REMOJI_DIR' ) && define( 'REMOJI_DIR', __DIR__ . '/' ); // Full absolute path '/usr/local/***/wp-content/plugins/remoji/' or MU
 

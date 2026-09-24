@@ -100,6 +100,7 @@ $__gui = GUI::get_instance();
 		<th><?php echo esc_html__( 'Limit Emojis', 'remoji' ); ?></th>
 		<td>
 			<?php $__gui->build_textarea( 'emoji_whitelist' ); ?>
+			<div class="remoji-desc" data-remoji-whitelist-preview style="display:none;"></div>
 			<div class="remoji-desc">
 				<?php echo esc_html__( 'One emoji name per line to restrict the picker to exactly these emojis, in this order. Leave empty to offer the default list below.', 'remoji' ); ?>
 				<?php echo esc_html__( 'Any name from the bundled catalog (about 2,200 Slack/GitHub-style shortnames such as fire, skull, clown_face, eyes, 100) or from Custom Emojis works here.', 'remoji' ); ?>

@@ -237,7 +237,7 @@ class Admin extends Instance {
 			// Normalize the emoji whitelist: split lines, trim (incl CR), drop blanks/dupes, keep only real emoji keys.
 			// Unicode fork: any name from the bundled catalog or the custom list is valid.
 			if ( ! empty( $list['emoji_whitelist'] ) ) {
-				$valid                   = array_merge( array_keys( GUI::get_instance()->catalog() ), array_keys( $custom ) );
+				$valid                   = array_map( 'strval', array_merge( array_keys( GUI::get_instance()->catalog() ), array_keys( $custom ) ) );
 				$list['emoji_whitelist'] = self::_clean_key_list( $list['emoji_whitelist'], $valid );
 			}
 

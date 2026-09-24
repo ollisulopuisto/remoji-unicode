@@ -1277,4 +1277,20 @@ input.remoji-input-warning {
 	top: 0;
 }
 
+/* 2.6.3: "Limit Emojis" live preview */
+.remoji-whitelist-item {
+	white-space: nowrap;
+	margin-right: 8px;
+	display: inline-block;
+}
 
+/* Site overrides: big speech-bubble reaction bar */
+.remoji_bar { display: flex !important; flex-wrap: wrap; align-items: center; }
+.remoji_add_container { order: -1; width: 84px !important; height: 56px !important; padding: 0 !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; border-radius: 22px 22px 22px 3px !important; background: #fff !important; border: 1px solid rgba(29,28,29,.25) !important; }
+.remoji_add_icon { width: 40px !important; height: 40px !important; }
+.remoji_add_icon:before { width: 34px !important; height: 34px !important; background-size: contain !important; }
+.remoji_container { height: 56px !important; padding: 0 14px !important; font-size: 32px !important; line-height: 1 !important; display: inline-flex !important; align-items: center !important; border-radius: 22px 22px 22px 3px !important; }
+.remoji_container img { width: 36px !important; height: 36px !important; }
+.remoji_count { font-size: 18px !important; margin-left: 6px; }
+.remoji_add_container:hover { background: rgba(242,199,68,1) !important; border-color: rgba(29,28,29,.6) !important; transform: scale(1.08); box-shadow: 0 2px 8px rgba(0,0,0,.2); }
+.remoji_add_container:hover .remoji_add_icon:before { background-color: transparent !important; }
