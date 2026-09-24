@@ -1,12 +1,16 @@
+Forked from [Remoji](https://wordpress.org/plugins/remoji/).
+Changes: Unicode emoji rendering, configurable and custom emoji sets, optional self-hosted emoji fonts, and privacy and security updates.
+
 === Remoji Unicode Fork ===
 
 Unofficial fork of Remoji 2.6 (https://wordpress.org/plugins/remoji/, GPLv3). Changes:
-* Reactions render as plain Unicode emoji (<span>), not bundled SVG images. The data/emoji/ SVG folder is removed.
-* Any emoji works: the remoji_emoji_list filter accepts name => codepoint ('fire' => '1F525', ZWJ sequences like '1F9D1-200D-1F4BB', 'U+2764', or the emoji character).
-* "Limit Emojis" accepts any of ~2,200 bundled shortnames (data/emoji.map) and sets the picker order.
+
+* Reactions render as plain Unicode emoji (`<span>`), not bundled SVG images. The `data/emoji/` SVG folder is removed.
+* Any emoji works: the `remoji_emoji_list` filter accepts `name => codepoint` (`'fire' => '1F525'`, ZWJ sequences like `'1F9D1-200D-1F4BB'`, `'U+2764'`, or the emoji character).
+* "Limit Emojis" accepts any of the ~2,200 bundled shortnames (`data/emoji.map`) and sets the picker order.
 * New "Custom Emojis" setting: one `name = 1F525` per line.
-* Optional self-hosted emoji font: add_filter( 'remoji_emoji_font_url', fn() => 'https://example.com/emoji-subset.woff2' );
-* Shares settings, post/comment meta and the reaction table with the original, so existing reactions carry over.
+* Optional self-hosted emoji font: `add_filter( 'remoji_emoji_font_url', fn() => 'https://example.com/emoji-subset.woff2' );`.
+* Settings, post/comment meta, and the reaction table are shared with the original, so existing reactions carry over.
 
 Contributors: Remoji
 Tags: comment, emoji, postviews, counter, views
@@ -22,7 +26,7 @@ Reactive emoji. Allow visitors to add emoji reactions to your posts and comments
 
 Add the slack style emoji to posts, pages or comments.
 
-= Features: =
+= Features =
 
 * React with emojis to any post or comment.
 
@@ -43,14 +47,14 @@ Add the slack style emoji to posts, pages or comments.
 2. In the loop `while ( have_posts() ) {` or anywhere you want to show the views, add the following codes: `do_action( 'remoji_postview' );`.
 
 
-*API*
+= API =
 
 To show postview in themes/plugins, use `do_action( 'remoji_postview', $the_post_id_to_inquire );`.
 
 
-*Shortcode [views] available*
+= Shortcode [views] =
 
-Use `[views]` or `[views id="3"]`(To show the views of post ID 3) in your editor.
+Use `[views]` or `[views id="3"]` (to show the views of post ID 3) in your editor.
 
 
 == Screenshots ==
